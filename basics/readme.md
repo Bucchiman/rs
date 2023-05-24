@@ -1,0 +1,1 @@
+/home/yk.iwabuchi/common/snippets/readme/rust.md
