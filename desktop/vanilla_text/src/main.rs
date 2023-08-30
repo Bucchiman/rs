@@ -3,7 +3,7 @@
  * Author:          8ucchiman
  * CreatedDate:     2023-08-30 15:30:48
  * LastModified:    2023-01-23 14:15:07 +0900
- * Reference:       8ucchiman.jp
+ * Reference:       https://qiita.com/koji_mats/items/62e85a87cc580e225796
  * Description:     ---
  */
 
