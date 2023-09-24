@@ -1,1 +1,1 @@
-/home/yk.iwabuchi/common/snippets/readme/rust.md
+../../../readme/rust_rough.md
