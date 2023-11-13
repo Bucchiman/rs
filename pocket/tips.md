@@ -139,3 +139,23 @@ fn main () {
 ```
 
 - [reference p74](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
+
+<!-- ------------------------------ -->
+
+# taple
+
+```rs
+    let text = "I see the eigenvalue in thine eye";
+    let (head, tail) = text.split_at(21)
+    assert_eq!(head, "I see the eigenvalue ");
+    assert_eq!(tail, "in thine eye");
+```
+- [reference](rust programming)
+
+<!-- ------------------------------ -->
+
+# 参照
+- Cのポインタと違い、rustの参照は決してnullにならない
+
+- &T
+- &mut T
