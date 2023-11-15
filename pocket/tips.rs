@@ -1,52 +1,48 @@
-<!--
+/*
  FileName:      tips
  Author:        8ucchiman
  CreatedDate:   2023-11-12 15:01:49
  LastModified:  2023-01-25 10:56:12 +0900
  Reference:     8ucchiman.jp Description:   ---
--->
+*/
 
-<!-- ------------------------------ -->
-# length of array
-```rs
+/* ------------------------------ */
+// length of array
 fn main () {
     let numbers: [i32; 5] = [1, 2, 3, 4, 5];
     let length = numbers.len();
     println!("{}", length);
 }
 
-```
-- [Reference](https://www.choge-blog.com/programming/rustarraygetlength/)
-<!-- ------------------------------ -->
-# io::stdin().read_line(&mut guess).expect("Failed to read line");
+// [Reference](https://www.choge-blog.com/programming/rustarraygetlength/)
+/* ------------------------------ */
+// # io::stdin().read_line(&mut guess).expect("Failed to read line");
 
-```rs
     use std::io;
     fn main() {
         let mut guess = String::new();
         io::stdin().read_line(&mut guess).expect("Failed to read line");
     }
-```
-- [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
 
-<!-- ------------------------------ -->
-# rand::thread_rng().gen_range(1..101);
+// [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
+
+/* ------------------------------ */
+// # rand::thread_rng().gen_range(1..101);
 
 
-```rs
 use rand::Rng;
 
 fn main () {
     let secret_number = rand::thread_rng().gen_range(0..101);
     print!("{}", secret_number);
 }
-```
 
-- 2023-11-12 18時10分20秒
-- [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
-<!-- ------------------------------ -->
-# compare number
-```rs
+// 2023-11-12 18時10分20秒
+// [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
+
+/* ------------------------------ */
+// # compare number
+
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
@@ -77,15 +73,12 @@ fn main () {
     }
 }
 
-```
+// 2023-11-12 18時28分45秒
+// [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
 
-- 2023-11-12 18時28分45秒
-- [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
+/* ------------------------------ */
+// # string2integer
 
-<!-- ------------------------------ -->
-# string2integer
-
-```rs
     use std::io;
 
     fn main () {
@@ -97,15 +90,14 @@ fn main () {
             Err(_) => continue,
         }
     }
-```
-- 2023-11-12 18時28分33秒
-- [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
 
-<!-- ------------------------------ -->
-# シャドーイング
-- 前に定義した変数と同じ名前の変数を新しく宣言でき、新しい変数は、前の変数を覆い隠す
+// 2023-11-12 18時28分33秒
+// [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
 
-```rs
+/* ------------------------------ */
+// # シャドーイング
+// - 前に定義した変数と同じ名前の変数を新しく宣言でき、新しい変数は、前の変数を覆い隠す
+
 fn main () {
     let x = 4;
     let x = x + 1;
@@ -116,46 +108,54 @@ fn main () {
     let mut spaces = "    ";
     spaces = spaces.len();        // ng!!
 }
-```
 
-<!-- ------------------------------ -->
-# data type
-- rust: 静的型付き言語
+/* ------------------------------ */
+// # data type
+// - rust: 静的型付き言語
 
-- [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
-<!-- ------------------------------ -->
-# move
-```rs
+// [reference](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
+
+/* ------------------------------ */
+-- # move
     let s1 = String::from("hello");
     let s2 = s1;
     println!("{}, worl!", s1);      // error
-```
 
-```rs
+
+// part2
     let s1 = String::from("hello");
     let s2 = s1.clone();
 
     println!("{}", s1);
-```
 
-- [reference p74](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
+// [reference p74](https://doc.rust-jp.rs/book-ja-pdf/book.pdf)
 
-<!-- ------------------------------ -->
+/* ------------------------------ */
 
-# taple
+// # taple
 
-```rs
     let text = "I see the eigenvalue in thine eye";
     let (head, tail) = text.split_at(21)
     assert_eq!(head, "I see the eigenvalue ");
     assert_eq!(tail, "in thine eye");
-```
-- [reference](rust programming)
 
-<!-- ------------------------------ -->
+// [reference](rust programming)
 
-# 参照
-- Cのポインタと違い、rustの参照は決してnullにならない
+/* ------------------------------ */
 
-- &T
-- &mut T
+// # 参照
+// - Cのポインタと違い、rustの参照は決してnullにならない
+
+// - &T
+// - &mut T
+
+
+/* ------------------------------ */
+// # type alias
+
+    type BlockShape = [[usize; 4]; 4];
+
+
+
+// [reference](https://doc.rust-jp.rs/book-ja/ch19-04-advanced-types.html)
+/* ------------------------------ */
