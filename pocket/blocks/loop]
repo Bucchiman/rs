@@ -1,0 +1,5 @@
+Block>
+for i in 1..6 {
+    println!("hello world {}", i)
+}
+>END
