@@ -1,0 +1,17 @@
+Block>
+#[derive(Debug)]
+enum Direction {
+    Left,
+    Right,
+}
+
+#[derive(Debug)]
+enum PlayerMove {
+    Pass,                        // Simple variant
+    Run(Direction),              // Tuple variant
+    Teleport { x: u32, y: u32 }, // Struct variant
+}
+
+>END
+
+Ref> https://google.github.io/comprehensive-rust/user-defined-types/enums.html

@@ -1,0 +1,4 @@
+Block>
+let mut buf = String::new();
+write!(&mut buf, "Hello {}", "Write!").unwrap();
+>END

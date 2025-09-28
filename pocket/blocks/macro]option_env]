@@ -1,0 +1,8 @@
+Block>
+let path = option_env!("HOGE");
+>END
+
+
+TL;DR> 環境変数がなくてもOption::Noneを返す
+
+Ref>https://qiita.com/elipmoc101/items/f76a47385b2669ec6db3

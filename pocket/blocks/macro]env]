@@ -1,0 +1,5 @@
+Block>
+let path = env!("HOME");
+>END
+
+Ref>https://qiita.com/elipmoc101/items/f76a47385b2669ec6db3
