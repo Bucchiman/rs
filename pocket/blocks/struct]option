@@ -1,0 +1,16 @@
+Block>
+struct BagOfHolding<T> {
+    // Our parameter type T can be handed to others
+    item: Option<T>,
+}
+let i32_bag = BagOfHolding::<i32> { item: None };
+i32_bag.item.is_none()
+let i32_bag = BagOfHolding::<i32> { item: Some(42) };
+i32_bag.item.is_some()
+match i32_bag.item {
+    Some(v) => println!("found {} in bag!", v),
+    None => println!("found nothing"),
+}
+>END
+
+Ref>https://tourofrust.com/35_en.html

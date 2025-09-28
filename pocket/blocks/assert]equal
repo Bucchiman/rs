@@ -1,0 +1,3 @@
+Block>
+assert_eq!(10, 10)
+>END

@@ -1,0 +1,10 @@
+Block>
+struct BagOfHolding<T> {
+    item: T,
+}
+let i32_bag = BagOfHolding::<i32> { item: 42 };
+let bool_bag = BagOfHolding::<bool> { item: true };
+>END
+
+
+Ref>https://tourofrust.com/33_en.html

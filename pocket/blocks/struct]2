@@ -1,0 +1,6 @@
+Block>
+struct Location(i32, i32);
+
+let loc Location(42, 32);
+println!("{}, {}", loc.0, loc.1);
+>END
