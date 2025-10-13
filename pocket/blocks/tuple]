@@ -1,0 +1,6 @@
+Block>
+let t: (i8, bool) = (7, true);
+let (num, bool_val) = t
+>END
+
+Ref>https://google.github.io/comprehensive-rust/comprehensive-rust.pdf

@@ -1,0 +1,6 @@
+Block>
+use std::path:Path;
+let path =  Path::new("./foo/bar.txt");
+let file_stem = path.file_stem();
+assert_eq!(file_stem, Some(OsStr::new("bar")));
+>END

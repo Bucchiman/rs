@@ -1,0 +1,8 @@
+Block>
+let s1: &str = "World";
+let mut s2: String = String::from("Hello ");
+s2.push_str(s1);
+let s3: &str = &s2[2..4];
+>END
+
+TL;DR> String is an owned buffer of UTF-8 encoded bytes, similoar to Vec<T>

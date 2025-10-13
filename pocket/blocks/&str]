@@ -1,0 +1,6 @@
+Block>
+let s1: &str = "World";
+let s3: &str = &s1[2..4];
+>END
+
+TL;DR> &str is a slice of UTF-8 encoded bytes, similar to &[u8]

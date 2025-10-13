@@ -1,0 +1,12 @@
+Block>
+'outer: for i in 0..=2 {
+    for j in 0..=2 {
+        elements_searched += 1;
+        if s[i][j] == target_value {
+            break 'outer;
+        }
+    }
+}
+>END
+
+Ref>https://google.github.io/comprehensive-rust/comprehensive-rust.pdf

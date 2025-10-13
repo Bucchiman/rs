@@ -1,0 +1,5 @@
+Block>
+let a: &'static str = "Hello World";
+a.starts_with("He");
+a.ends_with("ld");
+a.is_empty();

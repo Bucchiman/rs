@@ -1,0 +1,5 @@
+Block>
+let path = Path::new("./foo/bar.txt");
+let extension = path.extension();
+assert_eq!(extension, Some(OsStr::new("txt")));
+>END

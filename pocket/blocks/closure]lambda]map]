@@ -1,0 +1,5 @@
+Block>
+let a = vec![1, 2, 3, 4];
+let a: Vec<i32> = a.into_iter().map(|x| 2*x).collect();
+println!("{:?}", a);
+>END

@@ -1,0 +1,10 @@
+Block>
+let v1 = vec![1, 2, 3];
+let v1_iter = v1.iter_mut().map(|x| 2*x).collect();
+for val in v1_iter {
+    println!("{}", val);
+}
+>END
+
+
+Reference> https://blog.coolhead.in/difference-between-intoiter-iter-and-itermut-in-rust

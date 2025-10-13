@@ -1,0 +1,4 @@
+Block>
+let a: [i32; 100] = [10; 100];
+println!("{a:?}");
+>END

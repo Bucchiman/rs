@@ -1,0 +1,12 @@
+Block>
+pub trait Logger {
+    fn log(&self, verbosity: u8, message: &str);
+}
+
+struct StderrLogger;
+
+impl Logger for StrerrLogger {
+    fn log(&self)
+}
+
+>END

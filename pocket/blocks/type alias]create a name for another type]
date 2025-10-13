@@ -1,0 +1,9 @@
+Block>
+enum CarryableConcreteItem {
+    Left,
+    Right,
+}
+type Item = CarryableConcreteItem;
+>END
+
+Similar> typedef

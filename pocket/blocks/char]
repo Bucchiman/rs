@@ -1,0 +1,5 @@
+Block>
+let hoge = 'C';
+hoge.is_alphabetic();
+hoge.is_numeric();
+>END

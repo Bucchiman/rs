@@ -1,0 +1,19 @@
+Block>
+struct Rectangle {
+    width: u32,
+    height: u32
+}
+
+impl Rectangle {
+    fn new(width: u32, height:u32) -> Self {
+        Self {width, height}
+    }
+}
+
+fn main() {
+    let rect1 = Rectangle::new(30, 50);
+    println!("The area of the rectangle is {} square pixels.", rect1.area());
+}
+>END
+
+Ref>https://zenn.dev/asamin/articles/42cefc55f6c9b6

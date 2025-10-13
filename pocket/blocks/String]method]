@@ -1,0 +1,5 @@
+Block>
+let mut helloworld = String::from("hello");
+helloworld.push_str(" World");
+helloworld = helloworld + "!";
+>END

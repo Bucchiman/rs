@@ -1,0 +1,40 @@
+Block>
+// Cargo.toml contains the following
+// [dependencies]
+// clap = {version = "4.0", features = ["derive"]}
+
+use clap::{Parser, Subcommand};
+
+#[derive(Parser)]
+#[command(version, about, long_about=None)]
+struct Args {
+    #[command(subcommand)]
+    cmd: Commands,
+
+    #[arg(short, long)]
+    name: String,
+
+    #[arg(short, long, default_value_t=1)]
+    count: u8,
+
+    path: std::path::PathBuf
+
+    #[arg(long, default_value=false)]
+    verbose: bool,
+}
+
+#[derive(Subcommand, Debug, Clone)]
+enum Commands {
+    Get,
+    Set
+}
+
+let args = Args::parse();
+if !args.path.exists() {
+    dbg!("path not exists!");
+}
+>END
+
+config>clap = {version = "4.0", features = ["derive"]}
+
+Ref> https://www.shuttle.dev/blog/2023/12/08/clap-rust

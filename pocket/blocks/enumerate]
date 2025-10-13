@@ -1,0 +1,5 @@
+Block>
+for (i, val) in vec![1, 2, 3, 4].iter().enumerate() {
+    println!("(i, val)=({}, {})", i, val)
+}
+>END

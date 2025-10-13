@@ -1,0 +1,14 @@
+Block>
+fn push_excl(s: &mut String) {
+    s.push('!');
+}
+fn main() {
+    let mut s = String::from("hello");
+    push_excl(&mut s);                 // 可変借用は 1 つだけ
+    println!("{s}");
+}
+>END
+
+Keyword> borrow
+       > mutable borrow
+       > &mut T

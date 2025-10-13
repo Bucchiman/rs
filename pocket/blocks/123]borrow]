@@ -1,0 +1,25 @@
+Block>
+fn main() {
+    let mut v = vec![1, 2, 3];
+    let r1 = &v;              // 不変借用
+    let r2 = &v;              // 不変借用（複数OK）
+    println!("{:?} {:?}", r1, r2);
+
+    let m = &mut v;           // ここはエラー：不変借用がまだ有効
+    m.push(4);
+}
+
+
+fn main() {
+    let mut v = vec![1, 2, 3];
+
+    {                      // ブロックで不変借用を閉じる
+        let r1 = &v;
+        println!("{:?}", r1);
+    }                      // r1 がここで終了
+    let m = &mut v;        // もう OK
+    m.push(4);
+}
+>END
+
+Keyword> borrow rule

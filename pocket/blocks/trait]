@@ -1,0 +1,6 @@
+Block>
+trait Pet {
+    fn talk(&self) -> String;
+    fn greet(&self);
+}
+>END

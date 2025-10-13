@@ -1,0 +1,6 @@
+Block>
+use std::path:Path;
+let path =  Path::new("./foo/bar.txt");
+let parent = path.parent();
+assert_eq!(parent, Some(Path::new("./foo")));
+>END
