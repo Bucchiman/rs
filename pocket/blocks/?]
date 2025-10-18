@@ -1,0 +1,10 @@
+Block>
+fn str_to_number(s: &str) -> Result<i32, std::num::ParseIntError> {
+    let n = s.parse::<i32>()?;
+    Ok(n * 2)
+}
+>END
+
+Syntax> expr?   # exprがOk(x)ならxを取り出して続行し,Err(e)なら即座に関数からErr(e)を返す
+
+TL;DR> 

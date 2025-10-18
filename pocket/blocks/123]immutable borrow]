@@ -2,6 +2,7 @@ Block>
 fn print_len(s: &String) {           // 参照を受け取る（所有しない）
     println!("{}", s.len());
 }
+
 fn main() {
     let s = String::from("hello");
     print_len(&s);                   // &s で不変借用

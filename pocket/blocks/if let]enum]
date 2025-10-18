@@ -1,0 +1,13 @@
+Block>
+enum Message {
+    Quit,
+    Move {x: i32, y: i32},
+    Write(String),
+}
+
+let msg = Message::Move {x: 10, y: 20};
+
+if let Message::Move{x, y} = msg {
+    println!("Move: ({}, {})", x, y);
+}
+>END

@@ -1,0 +1,8 @@
+Block>
+let mut map = HashMap::new();
+let key = "apple";
+let value = 1;
+*map.entry(key).or_insert(0) += vlue;
+>END
+
+TL;DR> キーがあるかどうか

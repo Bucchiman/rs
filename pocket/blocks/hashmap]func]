@@ -1,0 +1,6 @@
+Block>
+use std::collections::HashMap;
+let mut basket = HashMap::new();
+basket.insert(String::from("banana"), 4);
+basket.values().sum::<u32>()
+>END

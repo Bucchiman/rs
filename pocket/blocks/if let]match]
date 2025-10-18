@@ -1,0 +1,18 @@
+Block>
+let some_value = Some(5);
+
+if let Some(x) = some_value {
+    println!("x = {}", x);
+}
+else {
+    println!("This is None");
+}
+>END
+
+Alternative>
+let some_value = Some(5);
+
+match some_value {
+    Some(x) => println!("x = {}", x),
+    None => println!("This is None"),
+}

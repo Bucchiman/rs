@@ -1,0 +1,6 @@
+Block>
+let mut map: HashMap<&str, Vec<i32>> = HashMap::new();
+map.entry("group1").or_default().push(10);
+>END
+
+TL;DR> Default::default() を挿入

@@ -1,0 +1,7 @@
+Block>
+let mut iter = (1..=3).into_iter();
+
+while let Some(x) = iter.next() {
+    println!("number is {}", x)
+}
+>END

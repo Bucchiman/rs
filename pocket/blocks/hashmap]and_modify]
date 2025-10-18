@@ -1,0 +1,13 @@
+Block>
+struct Sample {
+    a: u8,
+    b: u8,
+}
+
+let mut scores = HashMap::<&str, Sample>::new();
+scores.entry("sample_a").or_default();
+scores.entry("sample_a").and_modify(|x| x.a+=4);
+>END
+
+
+TL;DR> 

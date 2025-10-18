@@ -1,0 +1,22 @@
+Block>
+struct MyStruct {
+    value: i32,
+}
+
+impl Into<i32> for MyStruct {
+    fn into(self) -> i32 {
+        self.value
+    }
+}
+
+impl Into<i64> for MyStruct {
+    fn into(self) -> i64 {
+        self.value as i64
+    }
+}
+
+let s = MyStruct{value: 123};
+let n: i32 = s.into();
+>END
+
+Ref> https://www.ne.jp/asahi/hishidama/home/tech/rust/std/Into.html

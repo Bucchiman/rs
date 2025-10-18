@@ -1,0 +1,12 @@
+Block>
+let mut map: HashMap<&str, Vec<i32>> = HashMap::new();
+*map.entry("apple").or_insert(0) += value
+
+>END
+
+
+TL;DR> キーがなければvを挿入
+
+Example> or_insert(0) # なければ0を挿入,存在すればその参照を返す
+
+Return> &mut V

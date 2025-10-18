@@ -1,0 +1,9 @@
+Block>
+let result: Result<i32, &str> = Ok(10);
+if let Ok(num) = result {
+    println!("success: {}", num);
+}
+else {
+    println!("error!!");
+}
+>END
