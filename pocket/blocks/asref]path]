@@ -1,0 +1,15 @@
+Block>
+let path: &Path = string.as_ref();
+let path: &Path = str.as_ref();
+let path: &Path = os_string.as_ref();
+let path: &Path = os_str.as_ref();
+let path: &Path = path_buf.as_ref();
+let path: &Path = path.as_ref();
+>END
+
+
+Keywords> asref
+        > path
+
+
+Reference> https://zenn.dev/suzuki_hoge/books/2023-03-rust-strings-8868f207b3ed18/viewer/6-as-ref
