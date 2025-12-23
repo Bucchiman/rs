@@ -1,0 +1,9 @@
+Block>
+let test: &str = "Test";
+let bytes: &[u8] = test.as_bytes();
+let res = bytes.iter().map(|&s| s as char).collect::<String>();
+let converted: String = String::from_utf8(bytes.to_vec()).unwrap();
+>END
+
+
+Reference> https://qiita.com/4hiziri/items/dd9800ad7be42c395082
